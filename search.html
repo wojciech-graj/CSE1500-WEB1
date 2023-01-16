@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mentor Search</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="stylesearch.css">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="logo">
+          <img src="logo.png" alt="LOGO" id="logo" width="100">
+        </li>
+
+        <li>
+          <a href="index.html" class="headerButton">Home</a>
+        </li>
+      </ul>
+    </header>
+
+    <div id="signDiv">
+      <h1>Mentor Search</h1>
+
+      <form action="results.html">
+	<div class="grid-container-params">
+	  <div class="grid-item-skills">
+	    Skills:<br>
+	    <ul>
+	      <li>
+		<input type="checkbox" id="s0">
+		<label for="s0">Time Management</label>
+	      </li>
+	      <li>
+		<input type="checkbox" id="s1">
+		<label for="s1">Writing</label>
+	      </li>
+	      <li>
+		<input type="checkbox" id="s2">
+		<label for="s2">Football</label>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="grid-item-job-category">
+	    <select name="job category">
+	      <option value="Job Category" selected>Job Category</option>
+	      <option value="Chief GNUisance">Chief GNUisance</option>
+	      <option value="Programmer">Programmer</option>
+	    </select>
+	  </div>
+	  <div class=grid-item-company>
+	    <select name="company">
+	      <option value="Company" selected>Company</option>
+	      <option value="Red Hat">Red Hat</option>
+	      <option value="GNU Foundation">GNU Foundation</option>
+	    </select>
+	  </div>
+	  <div class="grid-item-distance">
+	    Max Distance:
+	    <input type="number">
+	    <select name="unit">
+	      <option value="km" selected>km</option>
+	      <option value="mi">mi</option>
+	    </select>
+	  </div>
+	  <div class="grid-item-score">
+	    Minimum Score:
+	    <div id="min-score">
+	      <div style="float: left">1</div>
+	      <input type="range" min="1" max="5" value="4" class="slider" id="score-slider">
+	      <div style="float: right">5</div>
+	    </div>
+	  </div>
+	</div>
+	<input type="submit"/ value="Search" id="submit">
+      </form>
+    </div>
+  </body>
+</html>

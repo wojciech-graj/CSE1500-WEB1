@@ -1,0 +1,32 @@
+#min-score {
+    width: max-content;
+    align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#search{
+    flex-grow: 1;
+    flex-basis: 800px;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+.grid-item-skills { grid-area: skills; }
+.grid-item-job-category { grid-area: job-category; }
+.grid-item-company { grid-area: company; }
+.grid-item-distance { grid-area: distance; }
+.grid-item-score { grid-area: score; }
+.grid-container-params { grid-container: params; }
+
+.grid-container-params {
+    display: grid;
+    grid-template-areas:
+	'skills company'
+	'skills job-category'
+	'skills distance'
+	'skills score';
+}

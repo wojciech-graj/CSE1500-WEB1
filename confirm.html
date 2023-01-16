@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="confirmMeatingStylesheet.css">
+    <title>Meeting Confirmation</title>
+  </head>
+  <body>
+
+    <header>
+      <ul>
+        <li class="logo">
+          <img src="logo.png" alt="LOGO" id="logo" width="100">
+        </li>
+
+        <li>
+          <a href="dashboard.html" class="headerButton">Dashboard</a>
+        </li>
+      </ul>
+    </header>
+
+
+    <div id="signDiv">
+
+      <h1>Confirm Meeting</h1>
+
+      <div id="choosePatient">
+        <label for="patients"><h3>Choose a Patient:</h3></label>
+        <select name="patients">
+          <option>SELECT</option>
+          <option>Tom</option>
+          <option>John</option>
+        </select>
+      </div>
+
+
+      <div id="chooseTimeslot">
+        <h3> Timeslots </h3>
+        <select name="slot">
+          <option value="Select Slot" selected>Select Slot</option>
+          <option value="2023-01-07 13:20">2023-01-07 13:20</option>
+          <option value="2023-01-09 19:30">2023-01-07 13:20</option>
+          <option value="2023-01-11 19:10">2023-01-07 13:20</option>
+        </select>
+      </div>
+
+      <br>
+
+      <input type="text" class="field" id="purpose" placeholder="Enter Purpose">
+
+      <input type="button" id="submit" value="Confirm">
+    </div>
+  </body>
+</html>

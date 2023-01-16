@@ -1,0 +1,9 @@
+ul {
+    width: 100%;
+    text-align: middle;
+    list-style-type: none;
+}
+
+input {
+    margin: 5px;
+}

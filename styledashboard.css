@@ -1,0 +1,20 @@
+#picture, #file
+{
+    display: block;
+    width: 100%;
+    border: 3px solid black;
+    text-decoration: underline;
+}
+
+.slot{
+    text-decoration: none;
+    color: #1e3f5a;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+#submit{
+    color: black;
+    text-decoration: none;
+}
